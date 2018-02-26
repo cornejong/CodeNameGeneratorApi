@@ -15,7 +15,7 @@ This is a basic response:
 }
 ```
 
-## Response Restrictions
+### Response Restrictions
 You can also specify the atribute and object group.
 Only values in those groups will be used for the creation of the codename. 
 
@@ -26,7 +26,7 @@ You provide these response restrictions via 'get' parameters:
 127.0.0.1:8080/your/dir/index.php?atribute=volitility&object=sealife
 ```
 
-### ```Status = false```
+### Status = false
 If response status returns false. Check the message for more info.
 
 #### e.g.
