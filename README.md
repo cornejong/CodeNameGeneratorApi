@@ -1,0 +1,2 @@
+# CodeNameGeneratorApi
+Simple CodeNameGenerator API
