@@ -130,7 +130,10 @@ class CodeNameGenerator
         /* Check the response type */
         switch ($type) {
             case 'JSON':
-                /* If its Json, Lets encode it the pretty way ;) */
+                /*  If its Json, */
+                /* Set the header for the Json content */
+                header('Content-Type: application/json');
+                /* And now encode it the pretty way ;) */
                 $response = json_encode($response, JSON_PRETTY_PRINT);
                 break;
             
