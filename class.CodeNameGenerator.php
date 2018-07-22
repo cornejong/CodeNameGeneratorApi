@@ -1,8 +1,8 @@
 <?php
 
-namespace CJ;
+namespace Generator;
 
-class CodeNameGenerator
+class codeName
 {
     public $status = true;
     public $givenAtribute = NULL;
