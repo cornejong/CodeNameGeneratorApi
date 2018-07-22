@@ -4,10 +4,10 @@ namespace Generator;
 
 class codeName
 {
-    public $status = true;
-    public $givenAtribute = NULL;
-    public $givenObject = NULL;
-    public $response = array(
+    private $status = true;
+    private $atribute = NULL;
+    private $object = NULL;
+    private $response = array(
         "status" => true
     );
 
