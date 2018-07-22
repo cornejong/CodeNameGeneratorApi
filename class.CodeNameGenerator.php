@@ -90,14 +90,14 @@ class codeName
 
     public function newCodeName()
     {
-        if(!empty($this->givenAtribute)) {
-            $atribute = $this->get('atribute', $this->givenAtribute);
+        if(!empty($this->atribute)) {
+            $atribute = $this->get('atribute', $this->atribute);
         } else {
             $atribute = $this->getRandom('atribute');
         }
 
-        if(!empty($this->givenObject)) {
-            $object = $this->get('object', $this->givenObject);
+        if(!empty($this->object)) {
+            $object = $this->get('object', $this->object);
         } else {
             $object = $this->getRandom('object');
         }
@@ -142,5 +142,17 @@ class codeName
                 break;
         }
     }
-
-}
+    
+    public function setAtribute($atribute)
+    {
+        if(!is_string($atribute) return false;
+        $this->atribute = $atribute;
+        return true;
+    }
+       
+    public function setObject($object)
+    {
+        if(!is_string($object) return false;
+        $this->object = $object;
+        return true;
+    }
